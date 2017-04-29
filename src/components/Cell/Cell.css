@@ -1,0 +1,25 @@
+.cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+}
+
+.top {
+    border-top-color: #000;
+}
+
+.bottom {
+    border-bottom-color: #000;
+}
+
+.left {
+    border-left-color: #000;
+}
+
+.right {
+    border-right-color: #000;
+}
+
+.rat {
+    background: orange!important;
+}
