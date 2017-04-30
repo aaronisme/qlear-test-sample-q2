@@ -1,21 +1,8 @@
-import initialStateHelper from './initialStateHelper';
 import locationHelper from './locationHelper';
 
-describe.only('locationHelper', () => {
+describe('locationHelper', () => {
   describe('#generateLocation', () => {
     describe('in the border', () => {
-      
-      beforeEach(() => {
-        const mockMaxRow = jest.fn(() => 3);
-        const mockMaxColumn = jest.fn(() => 3);
-        initialStateHelper.maxRow = mockMaxRow;
-        initialStateHelper.maxColumn = mockMaxColumn;
-      });
-      
-      afterEach(() => {
-        initialStateHelper.maxRow.mockClear()
-        initialStateHelper.maxColumn.mockClear()
-      });
       
       const currentLocation = {
         row: 1,
@@ -72,18 +59,6 @@ describe.only('locationHelper', () => {
     });
     
     describe('on the border', () => {
-      
-      beforeEach(() => {
-        const mockMaxRow = jest.fn(() => 2);
-        const mockMaxColumn = jest.fn(() => 2);
-        initialStateHelper.maxRow = mockMaxRow;
-        initialStateHelper.maxColumn = mockMaxColumn;
-      });
-      
-      afterEach(() => {
-        initialStateHelper.maxRow.mockClear();
-        initialStateHelper.maxColumn.mockClear();
-      });
       
       const openCell = {top: false, right: false, bottom: false, left: false}
       
@@ -146,18 +121,6 @@ describe.only('locationHelper', () => {
     })
     
     describe('with obstacle', () => {
-      
-      beforeEach(() => {
-        const mockMaxRow = jest.fn(() => 2);
-        const mockMaxColumn = jest.fn(() => 2);
-        initialStateHelper.maxRow = mockMaxRow;
-        initialStateHelper.maxColumn = mockMaxColumn;
-      });
-      
-      afterEach(() => {
-        initialStateHelper.maxRow.mockClear();
-        initialStateHelper.maxColumn.mockClear();
-      });
       
       it('should keep location if up have a obstacle when press up key', () => {
         const panel = [

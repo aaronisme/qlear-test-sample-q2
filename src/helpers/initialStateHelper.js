@@ -5,12 +5,2444 @@ const initialState = () => ({
   },
   panel:[
     [
-      {top:true, right:true, bottom:false, left:false, id:'00'},
-      {top:true, right:true, bottom:true, left:true, id:'01'},
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      }
     ],
     [
-      {top:false, right:false, bottom:true, left:true, id:'10'},
-      {top:false, right:false, bottom:true, left:false, id:'11'},
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      }
+    ],
+    [
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: false,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: true,
+        left: true,
+        bottom: false,
+        right: true
+      }
+    ],
+    [
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: true
+      },
+      {
+        top: false,
+        left: true,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: true,
+        left: false,
+        bottom: true,
+        right: false
+      },
+      {
+        top: false,
+        left: false,
+        bottom: true,
+        right: false
+      }
     ]
   ]
 });

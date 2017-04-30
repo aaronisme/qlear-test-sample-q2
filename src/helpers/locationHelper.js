@@ -1,6 +1,3 @@
-import initialStateHelper from './initialStateHelper';
-
-
 const directionMap = {
   'up': {row: -1, column: 0, obstacle:'bottom'},
   'down':{row:1, column:0, obstacle: 'top'},
@@ -11,9 +8,10 @@ const directionMap = {
 const generateLocation = (currentLocation, panel, direction) => {
   const nextRow = currentLocation.row + directionMap[direction].row;
   const newColumn = currentLocation.column + directionMap[direction].column;
+  const PanelRowNumber = panel.length;
+  const PanelColumnNumber = panel[0].length;
   
-  
-  if(nextRow < 0 || newColumn < 0 || nextRow >= initialStateHelper.maxRow() || newColumn >= initialStateHelper.maxColumn()) {
+  if(nextRow < 0 || newColumn < 0 || nextRow >= PanelRowNumber || newColumn >= PanelColumnNumber) {
     return currentLocation
   }
   
