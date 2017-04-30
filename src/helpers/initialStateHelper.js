@@ -2450,6 +2450,4 @@ const initialState = () => ({
 
 export default {
   initialState,
-  maxRow: () => initialState().panel.length,
-  maxColumn: () => initialState().panel[0].length
 }
