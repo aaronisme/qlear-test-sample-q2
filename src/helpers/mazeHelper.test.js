@@ -15,43 +15,51 @@ describe('mazeHelper', () => {
           {top: true, right: false, bottom: true, left: true},
         ]
       ];
-      const expectResult = ['10', '01'];
+
       const map = mazeHelper.reachAblePointMap(panel);
-      expect(map['00']).toEqual(expectResult);
-      expect(map['01']).toEqual(['00']);
-      expect(map['10']).toEqual(['00']);
-      expect(map['11']).toEqual([]);
+      expect(map['0 + 0']).toEqual(['1 + 0', '0 + 1']);
+      expect(map['0 + 1']).toEqual(['0 + 0']);
+      expect(map['1 + 0']).toEqual(['0 + 0']);
+      expect(map['1 + 1']).toEqual([]);
     });
   
-    it.only('should generate find the path', () => {
-      const panel = initialStateHelper.initialState().panel
-      // const panel = [
-      //   [
-      //     {top: true, right: false, bottom: false, left: true},
-      //     {top: true, right: true, bottom: true, left: false},
-      //   ],
-      //   [
-      //     {top: false, right: true, bottom: false, left: true},
-      //     {top: true, right: false, bottom: true, left: true},
-      //   ]
-      // ];
+    it('should return empty stack if path not exist', () => {
+      const panel = [
+        [
+          {top: true, right: false, bottom: false, left: true},
+          {top: true, right: true, bottom: true, left: false},
+        ],
+        [
+          {top: false, right: true, bottom: false, left: true},
+          {top: true, right: false, bottom: true, left: true},
+        ]
+      ];
       
-      
-      // const panel = [
-      //   [
-      //     {top: false, right: false, bottom: false, left: false},
-      //     {top: false, right: false, bottom: false, left: false},
-      //   ],
-      //   [
-      //     {top: false, right: false, bottom: false, left: false},
-      //     {top: false, right: false, bottom: false, left: false},
-      //   ]
-      // ];
-      const start = {row:0, column:0}
+      const start = {row:0, column:0};
       const end = {row:panel.length - 1, column:panel.length - 1}
-      console.log(panel, end)
       const pathStack = mazeHelper.findPath(panel,start, end);
-      console.log(pathStack)
+      expect(pathStack.length).toEqual(0);
+    });
+  
+    it('should return empty stack if path not exist', () => {
+      const panel = [
+        [
+          {top: false, right: true, bottom: false, left: false},
+          {top: false, right: false, bottom: false, left: true},
+        ],
+        [
+          {top: false, right: false, bottom: false, left: false},
+          {top: false, right: false, bottom: false, left: false},
+        ]
+      ];
+    
+      const start = {row:0, column:0};
+      const end = {row:panel.length - 1, column:panel.length - 1};
+      const pathStack = mazeHelper.findPath(panel,start, end);
+      expect(pathStack).toEqual(
+        [ { row: 0, column: 0 },
+        { row: 1, column: 0 },
+        { row: 1, column: 1 } ])
     });
   })
 });

@@ -3,7 +3,7 @@ import RowContainer from '../../contianers/RowContainer'
 import mazeHelper from '../../helpers/mazeHelper'
 import './Panel.css'
 
-const delay = params => func => new Promise(resolve => {
+const delay = func => params => new Promise(resolve => {
   setTimeout(() => {
     func(params);
     resolve();
@@ -31,7 +31,7 @@ class Panel extends Component {
   
     path.reduce(function (acc, eachPoint) {
       return acc.then(function () {
-        return delay(eachPoint)(that.props.autoRat)
+        return delay(that.props.autoRat)(eachPoint)
       });
     }, Promise.resolve());
   }
