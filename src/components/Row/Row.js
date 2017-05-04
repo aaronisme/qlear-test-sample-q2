@@ -2,26 +2,21 @@ import React, {Component, PropTypes} from 'react';
 import Cell from '../Cell/Cell'
 import './Row.css'
 
+const getRatsInCurrentRow = (rats, rowId) => rats.filter(rat => rat.row === rowId);
+const haveRatInColumn = (rats, column) => !!rats.filter(rat => rat.column === column).length;
+
 class Row extends Component {
   
-  shouldComponentUpdate(nextProps) {
-    const rowId = nextProps.rowId;
-    const nextRat = nextProps.rat;
-    const currentRat = this.props.rat;
-    
-    return rowId === nextRat.row || rowId === currentRat.row
-    
-  }
-  
   render(){
-    const {rowId, cells, rat} = this.props;
+    const {rowId, cells, rats} = this.props;
+    const ratsInCurrentRow = getRatsInCurrentRow(rats, rowId);
     return (
       <div className="row">
         {cells.map((cell, index) => {
-          if (rowId === rat.row && index === rat.column) {
-            return <Cell key={cell.id} borders={cell} rat/>
+          if (ratsInCurrentRow.length > 0 && haveRatInColumn(ratsInCurrentRow, index)) {
+            return <Cell key={`${rowId}${index}`} borders={cell} rat/>
           }
-          return <Cell key={cell.id} borders={cell}/>
+          return <Cell key={`${rowId}${index}`} borders={cell}/>
         })}
       </div>
     )
@@ -31,7 +26,7 @@ class Row extends Component {
 Row.propTypes = {
   rowId: PropTypes.number.isRequired,
   cells: PropTypes.array.isRequired,
-  rat: PropTypes.object.isRequired
+  rats: PropTypes.array.isRequired
 };
 
 export default Row;

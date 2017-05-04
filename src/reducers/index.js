@@ -1,12 +1,8 @@
 import { combineReducers } from 'redux';
-import locationHelper from '../helpers/locationHelper';
-
-const rat = (state = {row:0, column: 0}, action) => {
+const rats = (state = [], action) => {
   switch (action.type){
-    case 'MOVE_RAT':
-      return locationHelper.generateLocation(state, action.panel, action.direction);
     case 'AUTO_RAT':
-      return action.location;
+      return [...state, action.location];
     default:
       return state
   }
@@ -21,7 +17,7 @@ const panel = (state = [], action) => {
 
 const rootReducer = combineReducers(
   {
-    rat,
+    rats,
     panel
   }
 );

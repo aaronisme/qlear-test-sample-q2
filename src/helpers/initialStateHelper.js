@@ -1,8 +1,5 @@
 const initialState = () => ({
-  rat:{
-    row:0,
-    column:0
-  },
+  rats:[],
   panel:[
     [
       {
