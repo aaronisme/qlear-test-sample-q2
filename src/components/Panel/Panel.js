@@ -18,6 +18,7 @@ class Panel extends Component {
   }
   
   componentDidMount(){
+    this.start();
   }
   
   
@@ -41,7 +42,6 @@ class Panel extends Component {
     return (
       <div className="panel">
         {panel.map((row, index) => <RowContainer key={index} rowId={index} cells={row} />)}
-        <button onClick={() => this.start() }>Start</button>
       </div>
     )
   }
