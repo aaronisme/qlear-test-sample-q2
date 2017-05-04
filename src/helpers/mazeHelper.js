@@ -29,7 +29,6 @@ const findPath = (panel, startPoint, endPoint) => {
   pathStack.push(startPoint);
   visitedPoints.push(objectToString(startPoint));
   const panelMap = reachAblePointMap(panel);
-  console.log(panelMap)
   while (!(pathStack.length === 0 || _.isEqual(pathStack[pathStack.length - 1], endPoint)))  {
     const lastNode = pathStack[pathStack.length - 1 ];
     const reachablePoints = panelMap[objectToString(lastNode)];
