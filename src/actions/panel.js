@@ -1,4 +1,4 @@
-const moveRat = direction => (dispatch, getState) => {
+export const moveRat = direction => (dispatch, getState) => {
   const { panel } = getState();
   dispatch({
     type: 'MOVE_RAT',
@@ -7,4 +7,7 @@ const moveRat = direction => (dispatch, getState) => {
   })
 };
 
-export default moveRat
+export const autoRat = (location) => ({
+    type:'AUTO_RAT',
+    location
+});

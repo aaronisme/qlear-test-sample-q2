@@ -5,6 +5,8 @@ const rat = (state = {row:0, column: 0}, action) => {
   switch (action.type){
     case 'MOVE_RAT':
       return locationHelper.generateLocation(state, action.panel, action.direction);
+    case 'AUTO_RAT':
+      return action.location;
     default:
       return state
   }
