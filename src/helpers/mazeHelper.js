@@ -1,6 +1,9 @@
 import _ from 'lodash';
 import locationHelper from './locationHelper'
 
+const objectToString = (obj) => `${obj.row.toString()} + ${obj.column.toString()}`;
+const stringToObject = (pointString) => ({row:parseInt(pointString.split('+')[0], 10), column:parseInt(pointString.split('+')[1], 10)});
+
 const getReachablePoint = (currentPoint, panel) => {
  return ['up','down','left','right']
     .map(direction => locationHelper.generateLocation(currentPoint, panel, direction))
@@ -19,9 +22,6 @@ const reachAblePointMap = (panel) => {
   
   return reachAblePointMap
 };
-
-const objectToString = (obj) => `${obj.row.toString()} + ${obj.column.toString()}`;
-const stringToObject = (pointString) => ({row:parseInt(pointString.split('+')[0]), column:parseInt(pointString.split('+')[1])})
 
 const findPath = (panel, startPoint, endPoint) => {
   const pathStack = [];
